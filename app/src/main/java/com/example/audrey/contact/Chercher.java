@@ -1,6 +1,7 @@
 package com.example.audrey.contact;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,7 +22,7 @@ import java.util.List;
  * Created by Audrey on 16/01/2017.
  */
 
-public class Chercher extends Activity {
+public class Chercher extends Activity  {
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -94,5 +95,9 @@ public class Chercher extends Activity {
         AppIndex.AppIndexApi.end(client, getIndexApiAction());
         client.disconnect();
     }
+
+
+
+
 }
 

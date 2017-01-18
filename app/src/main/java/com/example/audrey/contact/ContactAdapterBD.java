@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -52,14 +53,23 @@ public class ContactAdapterBD extends BaseAdapter {
         TextView Nom = (TextView)layoutItem.findViewById(R.id.nom);
         TextView Prenom = (TextView)layoutItem.findViewById(R.id.prenom);
         TextView Number = (TextView)layoutItem.findViewById(R.id.num);
+        TextView Id = (TextView)layoutItem.findViewById(R.id.id);
 
         //(3) : Renseignement des valeurs
         Nom.setText(mListP.get(position).getNom());
         Prenom.setText(mListP.get(position).getPrenom());
         Number.setText(mListP.get(position).getNumber());
 
+
         //On retourne l'item créé.
         return layoutItem;
     }
+
+
+
+
+
+
+
 }
 

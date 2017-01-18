@@ -13,7 +13,7 @@ import java.util.List;
 public class Visualiser extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.second_activity);
+        setContentView(R.layout.personne);
         List<Personne> listP= Personne.listAll(Personne.class);
         //Création et initialisation de l'Adapter pour les personnes
         ContactAdapterBD adapter = new ContactAdapterBD(this, listP);

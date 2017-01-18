@@ -52,4 +52,6 @@ public class Personne extends SugarRecord{
                 ", number='" + number + '\'' +
                 '}';
     }
+
+
 }
